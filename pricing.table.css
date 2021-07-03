@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    background-color: #464e56;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+header {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+header p {
+    color: #b8c1ca;
+}
+main {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main > div {
+    width: 24%;
+}
+main > div:first-child {
+    border-top: 2px solid #a9b8cc;
+    border-bottom: 2px solid #a9b8cc;
+    margin-top: 20px;
+}
+main > div:nth-child(2) {
+    border-top: 2px solid #89b6ff;
+    border-bottom: 2px solid #89b6ff;
+    margin-top: 20px;
+    box-shadow: -10px 0px 8px -2px rgb(0 0 0 / 30%);
+}
+main > div:nth-child(3) {
+    border-top: 2px solid #56cdff;
+    border-bottom: 2px solid #56cdff;
+    box-shadow: -10px 0px 8px -2px rgb(0 0 0 / 30%);
+}
+main > div:nth-child(3)::before {
+    content: "Most popular";
+    background-color: #56cdff;
+    width: 100%;
+    height: 20px;
+    display: block;
+    text-align: center;
+
+}
+main > div:last-child {
+    border-top: 2px solid #0ddeeb;
+    border-bottom: 2px solid #0ddeeb;
+    margin-top: 20px;
+    box-shadow: -10px 0px 8px -2px rgb(0 0 0 / 30%);
+}
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+}
+.icon-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.category-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #b8c1ca;
+}
+.category-wrapper > span:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+.grey {
+    background-color: #a9b8cc;
+}
+.lilla {
+    background-color: #89b6ff;
+}
+.blue {
+    background-color: #56cdff;
+}
+.green {
+    background-color: #0ddeeb;
+}
+.number {
+    font-size: 2.5em;
+}
+.category-wrapper > * {
+    margin-top: 1em;
+}
+.nr-wrapper {
+    padding: 0 35px 0 35px;
+    border-radius: 30px;
+    margin-top: 40px;
+    color: black;
+}
+.list-wrapper {
+    margin-top: 40px;
+    color: #b8c1ca;
+}
+i {
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    margin: 0 2em 0 2em;
+}
+hr {
+    width: 10px;
+}
+.list-wrapper > div {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.list-wrapper > div span {
+    margin-left: 20px;
+}
+.list-wrapper > div:nth-child(2n) {
+    background-color: #5a636b;
+}
+
+
+footer {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: #b8c1ca;
+}
