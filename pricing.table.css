@@ -62,7 +62,7 @@ main > div:first-child {
     margin-top: 20px;
 }
 main > div:first-child:hover {
-    box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%), 10px 0px 8px -5px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(2) {
     border-top: 2px solid #89b6ff;
@@ -71,7 +71,7 @@ main > div:nth-child(2) {
     box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(2):hover {
-    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%), 10px 0px 8px -5px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(3) {
     border-top: 2px solid #56cdff;
@@ -79,7 +79,7 @@ main > div:nth-child(3) {
     box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(3):hover {
-    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%), 10px 0px 8px -5px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(3)::before {
     content: "Most popular";
@@ -97,7 +97,7 @@ main > div:last-child {
     box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
 }
 main > div:last-child:hover {
-    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%), 10px 0px 8px -5px rgb(0 0 0 / 30%);
 }
 .icon-wrapper {
     width: 50px;
