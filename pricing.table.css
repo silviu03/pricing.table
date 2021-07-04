@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,19 +9,39 @@ html, body {
 }
 .container {
     width: 100%;
-    background-color: #464e56;
+    /* background-color: #464e56; */
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
     font-size: 16px;
     padding-bottom: 20px;
+}
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 header {
     width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 header p {
     color: #b8c1ca;
+}
+.fun {
+    font-size: 2.5em;
+    width: fit-content;
+    margin: 0 auto;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,84,166,1) 0%, rgba(132,189,201,1) 90% );
+    padding: 2px 10px 2px 10px;
+    border-radius: 25px;
+    font-style: italic;
 }
 main {
     width: 95%;
@@ -31,21 +52,34 @@ main {
 main > div {
     width: 24%;
 }
+main > div:hover {
+    width: 24.1%;
+    height: auto;
+}
 main > div:first-child {
     border-top: 2px solid #a9b8cc;
     border-bottom: 2px solid #a9b8cc;
     margin-top: 20px;
 }
+main > div:first-child:hover {
+    box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
+}
 main > div:nth-child(2) {
     border-top: 2px solid #89b6ff;
     border-bottom: 2px solid #89b6ff;
     margin-top: 20px;
-    box-shadow: -10px 0px 8px -2px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
+}
+main > div:nth-child(2):hover {
+    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(3) {
     border-top: 2px solid #56cdff;
     border-bottom: 2px solid #56cdff;
-    box-shadow: -10px 0px 8px -2px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
+}
+main > div:nth-child(3):hover {
+    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%);
 }
 main > div:nth-child(3)::before {
     content: "Most popular";
@@ -60,7 +94,10 @@ main > div:last-child {
     border-top: 2px solid #0ddeeb;
     border-bottom: 2px solid #0ddeeb;
     margin-top: 20px;
-    box-shadow: -10px 0px 8px -2px rgb(0 0 0 / 30%);
+    box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%);
+}
+main > div:last-child:hover {
+    box-shadow: -10px 0px 8px 0px rgb(0 0 0 / 30%);
 }
 .icon-wrapper {
     width: 50px;
@@ -81,18 +118,25 @@ main > div:last-child {
     font-weight: bold;
     color: #fff;
 }
+.icon-comment {
+    margin-left: 20px;
+}
 
 .grey {
     background-color: #a9b8cc;
+    border: 2px solid #a9b8cc;
 }
 .lilla {
     background-color: #89b6ff;
+    border: 2px solid #89b6ff;
 }
 .blue {
     background-color: #56cdff;
+    border: 2px solid #56cdff;
 }
 .green {
     background-color: #0ddeeb;
+    border: 2px solid #0ddeeb;
 }
 .number {
     font-size: 2.5em;
@@ -102,9 +146,13 @@ main > div:last-child {
 }
 .nr-wrapper {
     padding: 0 35px 0 35px;
-    border-radius: 30px;
     margin-top: 40px;
     color: black;
+    outline: 3px solid black;
+    transition: outline-offset 250ms ease;
+}
+.nr-wrapper:hover {
+    outline-offset: -6px;
 }
 .list-wrapper {
     margin-top: 40px;
@@ -115,6 +163,9 @@ i {
     padding: 5px;
     font-size: 12px;
     margin: 0 2em 0 2em;
+}
+i:hover {
+    color: black;
 }
 hr {
     width: 10px;
