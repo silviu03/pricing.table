@@ -16,6 +16,7 @@ html, body {
     font-size: 16px;
     padding-bottom: 20px;
 }
+/* de obicei keyframe-urile se adauga la finalul CSS-ului */
 @keyframes bg-animation {
     0% {
         background-position: left;
@@ -67,6 +68,7 @@ main > div:first-child {
 main > div:first-child:hover {
     box-shadow: -10px 0px 8px -3px rgb(0 0 0 / 30%), 10px 0px 8px -5px rgb(0 0 0 / 30%);
 }
+/* toate regulile comune puteau extrage codul duplicat intr-o singura clasa */
 main > div:nth-child(2) {
     border-top: 2px solid #89b6ff;
     border-bottom: 2px solid #89b6ff;
@@ -147,6 +149,8 @@ main > div:last-child:hover {
 .category-wrapper > * {
     margin-top: 1em;
 }
+
+/* ne lipseste un border radius aici si border-ul cred ca e extra spice de la tine */
 .nr-wrapper {
     padding: 0 35px 0 35px;
     margin-top: 40px;
